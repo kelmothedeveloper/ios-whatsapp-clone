@@ -11,6 +11,7 @@ import ProgressHUD
 
 class NewProfileController: UIViewController {
     
+    @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
@@ -24,9 +25,11 @@ class NewProfileController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print(email, password)
-        
+        setupNavigation()
+    }
+    
+    func setupNavigation() {
+        navigationBar.prefersLargeTitles = false
     }
     
     private func dismissKeyboard() {
@@ -94,18 +97,19 @@ class NewProfileController: UIViewController {
         
         NotificationCenter.default.post(name: .USER_DID_LOGIN_NOTIFICATION, object: nil, userInfo: [kUSERID : FUser.currentId()])
         
-        let mainTabController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mainApp") as! UITabBarController
-        self.present(mainTabController, animated: true, completion: nil)
+        let mainTabBarController = StoryboardHelper.VC.main.viewController
+        
+        self.present(mainTabBarController, animated: true, completion: nil)
     }
     
     // MARK: IBOUTLETS
     
-    @IBAction func cancelButtonPressed(_ sender: UIButton) {
+    @IBAction func cancelButtonPressed(_ sender: UIBarButtonItem) {
         cleanTextFields()
         self.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func doneButtonPressed(_ sender: UIButton) {
+    @IBAction func doneButtonPressed(_ sender: UIBarButtonItem) {
         
         dismissKeyboard()
         

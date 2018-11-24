@@ -8,6 +8,10 @@
 
 import Foundation
 
+public let cellId = "cellId"
+public let headerId = "headerId"
+public let footerId = "footerId"
+
 public func delay(duration: Double, completion: @escaping () -> Void) {
     let deadline = DispatchTime.now() + duration
     DispatchQueue.main.asyncAfter(deadline: deadline, execute: completion)

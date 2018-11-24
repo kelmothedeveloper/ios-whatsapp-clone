@@ -12,13 +12,8 @@ class SettingsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupNavigation()
     }
-    
-    private func setupNavigation() {
-        self.navigationController?.navigationBar.prefersLargeTitles = true
-    }
-    
+        
     private func logout() {
         FUser.logOutCurrentUser { (isSuccess) in
             if isSuccess {
@@ -28,7 +23,7 @@ class SettingsTableViewController: UITableViewController {
     }
     
     private func showWelcomeVC() {
-        let welcomeVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "WelcomeVC") as! WelcomeViewController
+        let welcomeVC = StoryboardHelper.VC.welcome.viewController
         self.present(welcomeVC, animated: true, completion: nil)
     }
     

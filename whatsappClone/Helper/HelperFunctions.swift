@@ -50,7 +50,7 @@ func dictionaryFromSnapshots(snapshots: [DocumentSnapshot]) -> [NSDictionary] {
     
     var allMessages: [NSDictionary] = []
     for snapshot in snapshots {
-        allMessages.append(snapshot.data() as! NSDictionary)
+        allMessages.append(snapshot.data()! as NSDictionary)
     }
     return allMessages
 }

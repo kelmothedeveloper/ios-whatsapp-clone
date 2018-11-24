@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         FirebaseApp.configure()
+        setupGlobalViews()
         // Auto Login
         authListener = Auth.auth().addStateDidChangeListener({ (auth, user) in
             Auth.auth().removeStateDidChangeListener(self.authListener!)
@@ -29,8 +30,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     }
                 }
             }
-        })        
+        })
         return true
+    }
+    
+    func setupGlobalViews() {
+        UINavigationBar.appearance().prefersLargeTitles = true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {}
@@ -41,12 +46,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     
     func goToApp() {
-        
         NotificationCenter.default.post(name: .USER_DID_LOGIN_NOTIFICATION, object: nil, userInfo: [kUSERID : FUser.currentId()])
-        
-        let mainTabController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mainApp") as! UITabBarController
-        
-        self.window?.rootViewController = mainTabController
+        let mainTabBarController = StoryboardHelper.VC.main.viewController
+        self.window?.rootViewController = mainTabBarController
     }
 }
 

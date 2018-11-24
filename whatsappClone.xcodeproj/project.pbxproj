@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		525FF755864D0285EAD79B9C /* Pods_whatsappClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BAE815E17BF8D88E8363860 /* Pods_whatsappClone.framework */; };
+		8DD22FC721A84A5E002F40F3 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD22FC621A84A5E002F40F3 /* UserTableViewCell.swift */; };
+		8DD22FC921A85191002F40F3 /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD22FC821A85191002F40F3 /* UsersTableViewController.swift */; };
 		8DE3CA9121A7A5EE00224E42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE3CA9021A7A5EE00224E42 /* AppDelegate.swift */; };
 		8DE3CA9321A7A5EE00224E42 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE3CA9221A7A5EE00224E42 /* WelcomeViewController.swift */; };
 		8DE3CA9621A7A5EE00224E42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE3CA9421A7A5EE00224E42 /* Main.storyboard */; };
@@ -23,12 +25,17 @@
 		8DE3CAB821A7F76F00224E42 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE3CAB721A7F76F00224E42 /* Global.swift */; };
 		8DE3CABB21A7FDE000224E42 /* Notification.Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE3CABA21A7FDE000224E42 /* Notification.Name.swift */; };
 		8DE3CABE21A8004000224E42 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE3CABD21A8004000224E42 /* SettingsTableViewController.swift */; };
+		8DF4F54E21A8CCFA0005762E /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF4F54D21A8CCFA0005762E /* ChatsViewController.swift */; };
+		8DF4F55021A8CE710005762E /* StoryboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF4F54F21A8CE710005762E /* StoryboardHelper.swift */; };
+		8DF4F55221A8FDF80005762E /* ProfileViewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF4F55121A8FDF80005762E /* ProfileViewTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2FB33CC9E109ECFBFCBC5D3F /* Pods-whatsappClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whatsappClone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-whatsappClone/Pods-whatsappClone.debug.xcconfig"; sourceTree = "<group>"; };
 		3BAE815E17BF8D88E8363860 /* Pods_whatsappClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whatsappClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		622CA882F4A3C111C9935891 /* Pods-whatsappClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whatsappClone.release.xcconfig"; path = "Pods/Target Support Files/Pods-whatsappClone/Pods-whatsappClone.release.xcconfig"; sourceTree = "<group>"; };
+		8DD22FC621A84A5E002F40F3 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		8DD22FC821A85191002F40F3 /* UsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
 		8DE3CA8D21A7A5EE00224E42 /* whatsappClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whatsappClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE3CA9021A7A5EE00224E42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DE3CA9221A7A5EE00224E42 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +53,9 @@
 		8DE3CAB721A7F76F00224E42 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		8DE3CABA21A7FDE000224E42 /* Notification.Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.Name.swift; sourceTree = "<group>"; };
 		8DE3CABD21A8004000224E42 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		8DF4F54D21A8CCFA0005762E /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
+		8DF4F54F21A8CE710005762E /* StoryboardHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardHelper.swift; sourceTree = "<group>"; };
+		8DF4F55121A8FDF80005762E /* ProfileViewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +139,7 @@
 			children = (
 				8DE3CAAD21A7BD2500224E42 /* HelperFunctions.swift */,
 				8DE3CAB721A7F76F00224E42 /* Global.swift */,
+				8DF4F54F21A8CE710005762E /* StoryboardHelper.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -139,6 +150,9 @@
 				8DE3CABD21A8004000224E42 /* SettingsTableViewController.swift */,
 				8DE3CA9221A7A5EE00224E42 /* WelcomeViewController.swift */,
 				8DE3CAB121A7D93800224E42 /* NewProfileController.swift */,
+				8DD22FC821A85191002F40F3 /* UsersTableViewController.swift */,
+				8DF4F54D21A8CCFA0005762E /* ChatsViewController.swift */,
+				8DF4F55121A8FDF80005762E /* ProfileViewTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -154,6 +168,7 @@
 		8DE3CABC21A8003200224E42 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8DD22FC621A84A5E002F40F3 /* UserTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -314,13 +329,18 @@
 			files = (
 				8DE3CAB821A7F76F00224E42 /* Global.swift in Sources */,
 				8DE3CAA821A7BACD00224E42 /* FUser.swift in Sources */,
+				8DD22FC921A85191002F40F3 /* UsersTableViewController.swift in Sources */,
+				8DD22FC721A84A5E002F40F3 /* UserTableViewCell.swift in Sources */,
+				8DF4F54E21A8CCFA0005762E /* ChatsViewController.swift in Sources */,
 				8DE3CA9321A7A5EE00224E42 /* WelcomeViewController.swift in Sources */,
 				8DE3CA9121A7A5EE00224E42 /* AppDelegate.swift in Sources */,
 				8DE3CAAC21A7BCBB00224E42 /* CollectionReference.swift in Sources */,
+				8DF4F55221A8FDF80005762E /* ProfileViewTableViewController.swift in Sources */,
 				8DE3CAB221A7D93800224E42 /* NewProfileController.swift in Sources */,
 				8DE3CABE21A8004000224E42 /* SettingsTableViewController.swift in Sources */,
 				8DE3CAAA21A7BB8400224E42 /* Constants.swift in Sources */,
 				8DE3CAAE21A7BD2500224E42 /* HelperFunctions.swift in Sources */,
+				8DF4F55021A8CE710005762E /* StoryboardHelper.swift in Sources */,
 				8DE3CABB21A7FDE000224E42 /* Notification.Name.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,7 +489,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = P874Z4M836;
 				INFOPLIST_FILE = whatsappClone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -488,7 +508,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = P874Z4M836;
 				INFOPLIST_FILE = whatsappClone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

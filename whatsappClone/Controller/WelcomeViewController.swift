@@ -96,8 +96,8 @@ class WelcomeViewController: UIViewController {
         dismissKeyboard()
         
         NotificationCenter.default.post(name: .USER_DID_LOGIN_NOTIFICATION, object: nil, userInfo: [kUSERID : FUser.currentId()])
-
-        let mainTabController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mainApp") as! UITabBarController
+        
+        let mainTabController = StoryboardHelper.VC.main.viewController
         self.present(mainTabController, animated: true, completion: nil)
         
     }
