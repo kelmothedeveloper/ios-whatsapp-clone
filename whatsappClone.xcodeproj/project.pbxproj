@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		525FF755864D0285EAD79B9C /* Pods_whatsappClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BAE815E17BF8D88E8363860 /* Pods_whatsappClone.framework */; };
+		8D66B46521ABC85000883FFA /* Recent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66B46421ABC85000883FFA /* Recent.swift */; };
+		8D66B46721ABDC2E00883FFA /* RecentChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66B46621ABDC2E00883FFA /* RecentChatTableViewCell.swift */; };
 		8DD22FC721A84A5E002F40F3 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD22FC621A84A5E002F40F3 /* UserTableViewCell.swift */; };
 		8DD22FC921A85191002F40F3 /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD22FC821A85191002F40F3 /* UsersTableViewController.swift */; };
 		8DE3CA9121A7A5EE00224E42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE3CA9021A7A5EE00224E42 /* AppDelegate.swift */; };
@@ -34,6 +36,8 @@
 		2FB33CC9E109ECFBFCBC5D3F /* Pods-whatsappClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whatsappClone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-whatsappClone/Pods-whatsappClone.debug.xcconfig"; sourceTree = "<group>"; };
 		3BAE815E17BF8D88E8363860 /* Pods_whatsappClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whatsappClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		622CA882F4A3C111C9935891 /* Pods-whatsappClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whatsappClone.release.xcconfig"; path = "Pods/Target Support Files/Pods-whatsappClone/Pods-whatsappClone.release.xcconfig"; sourceTree = "<group>"; };
+		8D66B46421ABC85000883FFA /* Recent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recent.swift; sourceTree = "<group>"; };
+		8D66B46621ABDC2E00883FFA /* RecentChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentChatTableViewCell.swift; sourceTree = "<group>"; };
 		8DD22FC621A84A5E002F40F3 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		8DD22FC821A85191002F40F3 /* UsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
 		8DE3CA8D21A7A5EE00224E42 /* whatsappClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whatsappClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +134,7 @@
 				8DE3CAAB21A7BCBB00224E42 /* CollectionReference.swift */,
 				8DE3CAA721A7BACD00224E42 /* FUser.swift */,
 				8DE3CAA921A7BB8400224E42 /* Constants.swift */,
+				8D66B46421ABC85000883FFA /* Recent.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				8DD22FC621A84A5E002F40F3 /* UserTableViewCell.swift */,
+				8D66B46621ABDC2E00883FFA /* RecentChatTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -282,6 +288,7 @@
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SCSiriWaveformView/SCSiriWaveformView.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
@@ -306,6 +313,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCSiriWaveformView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
@@ -335,10 +343,12 @@
 				8DE3CA9321A7A5EE00224E42 /* WelcomeViewController.swift in Sources */,
 				8DE3CA9121A7A5EE00224E42 /* AppDelegate.swift in Sources */,
 				8DE3CAAC21A7BCBB00224E42 /* CollectionReference.swift in Sources */,
+				8D66B46521ABC85000883FFA /* Recent.swift in Sources */,
 				8DF4F55221A8FDF80005762E /* ProfileViewTableViewController.swift in Sources */,
 				8DE3CAB221A7D93800224E42 /* NewProfileController.swift in Sources */,
 				8DE3CABE21A8004000224E42 /* SettingsTableViewController.swift in Sources */,
 				8DE3CAAA21A7BB8400224E42 /* Constants.swift in Sources */,
+				8D66B46721ABDC2E00883FFA /* RecentChatTableViewCell.swift in Sources */,
 				8DE3CAAE21A7BD2500224E42 /* HelperFunctions.swift in Sources */,
 				8DF4F55021A8CE710005762E /* StoryboardHelper.swift in Sources */,
 				8DE3CABB21A7FDE000224E42 /* Notification.Name.swift in Sources */,
@@ -491,10 +501,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P874Z4M836;
 				INFOPLIST_FILE = whatsappClone/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kelvinfok.whatsappClone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -510,10 +517,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P874Z4M836;
 				INFOPLIST_FILE = whatsappClone/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kelvinfok.whatsappClone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

@@ -174,8 +174,8 @@ extension UsersTableViewController {
             let sectionTitle = self.sectionTitleList[indexPath.section]
             user = self.allUsersGrouped[sectionTitle]![indexPath.item]
         }
-        
-        cell.generateCellWith(fUser: user, indexPath: indexPath)
+        cell.delegate = self
+        cell.generateCellWith(user: user, indexPath: indexPath)
         return cell
     }
     
@@ -202,6 +202,14 @@ extension UsersTableViewController {
             user = self.allUsersGrouped[sectionTitle]![indexPath.item]
         }
         
+        if let currentUser = FUser.currentUser() {
+            let chatRoomId = startPrivateChat(user1: currentUser, user2: user)
+            print("chat room id: \(chatRoomId)")
+        }
+        
+    }
+    
+    func showProfile(user: FUser) {
         let profileViewTableViewController = StoryboardHelper.VC.profileView.viewController as! ProfileViewTableViewController
         profileViewTableViewController.user = user
         self.navigationController?.pushViewController(profileViewTableViewController, animated: true)

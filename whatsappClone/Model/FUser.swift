@@ -61,6 +61,94 @@ class FUser {
         
     }
     
+    init(_ _dictionary: [String : Any]) {
+        
+        objectId = _dictionary[kOBJECTID] as! String
+        pushId = _dictionary[kPUSHID] as? String
+        
+        if let created = _dictionary[kCREATEDAT] {
+            if (created as! String).count != 14 {
+                createdAt = Date()
+            } else {
+                createdAt = dateFormatter().date(from: created as! String)!
+            }
+        } else {
+            createdAt = Date()
+        }
+        if let updateded = _dictionary[kUPDATEDAT] {
+            if (updateded as! String).count != 14 {
+                updatedAt = Date()
+            } else {
+                updatedAt = dateFormatter().date(from: updateded as! String)!
+            }
+        } else {
+            updatedAt = Date()
+        }
+        
+        if let mail = _dictionary[kEMAIL] {
+            email = mail as! String
+        } else {
+            email = ""
+        }
+        if let fname = _dictionary[kFIRSTNAME] {
+            firstname = fname as! String
+        } else {
+            firstname = ""
+        }
+        if let lname = _dictionary[kLASTNAME] {
+            lastname = lname as! String
+        } else {
+            lastname = ""
+        }
+        fullname = firstname + " " + lastname
+        if let avat = _dictionary[kAVATAR] {
+            avatar = avat as! String
+        } else {
+            avatar = ""
+        }
+        if let onl = _dictionary[kISONLINE] {
+            isOnline = onl as! Bool
+        } else {
+            isOnline = false
+        }
+        if let phone = _dictionary[kPHONE] {
+            phoneNumber = phone as! String
+        } else {
+            phoneNumber = ""
+        }
+        if let countryC = _dictionary[kCOUNTRYCODE] {
+            countryCode = countryC as! String
+        } else {
+            countryCode = ""
+        }
+        if let cont = _dictionary[kCONTACT] {
+            contacts = cont as! [String]
+        } else {
+            contacts = []
+        }
+        if let block = _dictionary[kBLOCKEDUSERID] {
+            blockedUsers = block as! [String]
+        } else {
+            blockedUsers = []
+        }
+        
+        if let lgm = _dictionary[kLOGINMETHOD] {
+            loginMethod = lgm as! String
+        } else {
+            loginMethod = ""
+        }
+        if let cit = _dictionary[kCITY] {
+            city = cit as! String
+        } else {
+            city = ""
+        }
+        if let count = _dictionary[kCOUNTRY] {
+            country = count as! String
+        } else {
+            country = ""
+        }
+        
+    }
     
     
     init(_dictionary: NSDictionary) {

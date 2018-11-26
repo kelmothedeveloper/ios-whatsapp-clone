@@ -145,6 +145,7 @@ PODS:
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
+  - SnapKit (4.0.1)
 
 DEPENDENCIES:
   - Firebase/Auth
@@ -157,6 +158,7 @@ DEPENDENCIES:
   - JSQMessagesViewController (= 7.3.3)
   - MBProgressHUD
   - ProgressHUD
+  - SnapKit
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -191,6 +193,7 @@ SPEC REPOS:
     - Protobuf
     - SCSiriWaveformView
     - SDWebImage
+    - SnapKit
 
 SPEC CHECKSUMS:
   BoringSSL: e10f92a27043805c01071fe815a5cd98ae8212e7
@@ -224,7 +227,8 @@ SPEC CHECKSUMS:
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
   SCSiriWaveformView: 15b9dd6f94c7536e2032b34a35c6ff74d38c7411
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
 
-PODFILE CHECKSUM: a3d36c104535ad8f89af0fdf909a6198628f7dd0
+PODFILE CHECKSUM: b8f982ec61165cb28ecf967708104358cca9c2f3
 
 COCOAPODS: 1.5.0

@@ -33,14 +33,4 @@ struct StoryboardHelper {
         }
     }
     
-    
-//    static func present(_ viewController: UIViewController, to destination: VC, completion: (() -> Void)?) {
-//        viewController.present(destination.viewController, animated: true, completion: completion)
-//    }
-//
-//    static func show(_ viewController: UIViewController, to destination: VC, completion: (() -> Void)?) {
-//        viewController.navigationController?.pushViewController(destination.viewController, animated: true)
-//    }
-    
-    
 }
