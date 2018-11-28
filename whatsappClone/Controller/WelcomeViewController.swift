@@ -101,9 +101,7 @@ class WelcomeViewController: UIViewController {
         self.present(mainTabController, animated: true, completion: nil)
         
     }
-    
-    // MARK: Navigation
-    
+        
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueNewProfile" {
             let viewController = segue.destination as! NewProfileController

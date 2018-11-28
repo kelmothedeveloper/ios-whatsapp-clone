@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		525FF755864D0285EAD79B9C /* Pods_whatsappClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BAE815E17BF8D88E8363860 /* Pods_whatsappClone.framework */; };
+		8D241D1921AD3A24008D4B5F /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D241D1821AD3A24008D4B5F /* ChatViewController.swift */; };
+		8D241D1B21AD49CD008D4B5F /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D241D1A21AD49CD008D4B5F /* Utility.swift */; };
+		8D4B6CAD21AE393D00CC138D /* OutgoingMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4B6CAC21AE393D00CC138D /* OutgoingMessage.swift */; };
+		8D4B6CAF21AE46F700CC138D /* IncomingMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4B6CAE21AE46F700CC138D /* IncomingMessage.swift */; };
 		8D66B46521ABC85000883FFA /* Recent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66B46421ABC85000883FFA /* Recent.swift */; };
 		8D66B46721ABDC2E00883FFA /* RecentChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66B46621ABDC2E00883FFA /* RecentChatTableViewCell.swift */; };
 		8DD22FC721A84A5E002F40F3 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD22FC621A84A5E002F40F3 /* UserTableViewCell.swift */; };
@@ -36,6 +40,10 @@
 		2FB33CC9E109ECFBFCBC5D3F /* Pods-whatsappClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whatsappClone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-whatsappClone/Pods-whatsappClone.debug.xcconfig"; sourceTree = "<group>"; };
 		3BAE815E17BF8D88E8363860 /* Pods_whatsappClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whatsappClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		622CA882F4A3C111C9935891 /* Pods-whatsappClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whatsappClone.release.xcconfig"; path = "Pods/Target Support Files/Pods-whatsappClone/Pods-whatsappClone.release.xcconfig"; sourceTree = "<group>"; };
+		8D241D1821AD3A24008D4B5F /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		8D241D1A21AD49CD008D4B5F /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		8D4B6CAC21AE393D00CC138D /* OutgoingMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutgoingMessage.swift; sourceTree = "<group>"; };
+		8D4B6CAE21AE46F700CC138D /* IncomingMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingMessage.swift; sourceTree = "<group>"; };
 		8D66B46421ABC85000883FFA /* Recent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recent.swift; sourceTree = "<group>"; };
 		8D66B46621ABDC2E00883FFA /* RecentChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentChatTableViewCell.swift; sourceTree = "<group>"; };
 		8DD22FC621A84A5E002F40F3 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
@@ -135,6 +143,8 @@
 				8DE3CAA721A7BACD00224E42 /* FUser.swift */,
 				8DE3CAA921A7BB8400224E42 /* Constants.swift */,
 				8D66B46421ABC85000883FFA /* Recent.swift */,
+				8D4B6CAC21AE393D00CC138D /* OutgoingMessage.swift */,
+				8D4B6CAE21AE46F700CC138D /* IncomingMessage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -145,6 +155,7 @@
 				8DE3CAAD21A7BD2500224E42 /* HelperFunctions.swift */,
 				8DE3CAB721A7F76F00224E42 /* Global.swift */,
 				8DF4F54F21A8CE710005762E /* StoryboardHelper.swift */,
+				8D241D1A21AD49CD008D4B5F /* Utility.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -158,6 +169,7 @@
 				8DD22FC821A85191002F40F3 /* UsersTableViewController.swift */,
 				8DF4F54D21A8CCFA0005762E /* ChatsViewController.swift */,
 				8DF4F55121A8FDF80005762E /* ProfileViewTableViewController.swift */,
+				8D241D1821AD3A24008D4B5F /* ChatViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -335,22 +347,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D4B6CAF21AE46F700CC138D /* IncomingMessage.swift in Sources */,
 				8DE3CAB821A7F76F00224E42 /* Global.swift in Sources */,
 				8DE3CAA821A7BACD00224E42 /* FUser.swift in Sources */,
 				8DD22FC921A85191002F40F3 /* UsersTableViewController.swift in Sources */,
 				8DD22FC721A84A5E002F40F3 /* UserTableViewCell.swift in Sources */,
 				8DF4F54E21A8CCFA0005762E /* ChatsViewController.swift in Sources */,
 				8DE3CA9321A7A5EE00224E42 /* WelcomeViewController.swift in Sources */,
+				8D241D1B21AD49CD008D4B5F /* Utility.swift in Sources */,
 				8DE3CA9121A7A5EE00224E42 /* AppDelegate.swift in Sources */,
 				8DE3CAAC21A7BCBB00224E42 /* CollectionReference.swift in Sources */,
 				8D66B46521ABC85000883FFA /* Recent.swift in Sources */,
 				8DF4F55221A8FDF80005762E /* ProfileViewTableViewController.swift in Sources */,
 				8DE3CAB221A7D93800224E42 /* NewProfileController.swift in Sources */,
 				8DE3CABE21A8004000224E42 /* SettingsTableViewController.swift in Sources */,
+				8D4B6CAD21AE393D00CC138D /* OutgoingMessage.swift in Sources */,
 				8DE3CAAA21A7BB8400224E42 /* Constants.swift in Sources */,
 				8D66B46721ABDC2E00883FFA /* RecentChatTableViewCell.swift in Sources */,
 				8DE3CAAE21A7BD2500224E42 /* HelperFunctions.swift in Sources */,
 				8DF4F55021A8CE710005762E /* StoryboardHelper.swift in Sources */,
+				8D241D1921AD3A24008D4B5F /* ChatViewController.swift in Sources */,
 				8DE3CABB21A7FDE000224E42 /* Notification.Name.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,7 +517,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P874Z4M836;
 				INFOPLIST_FILE = whatsappClone/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kelvinfok.whatsappClone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -517,7 +536,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P874Z4M836;
 				INFOPLIST_FILE = whatsappClone/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kelvinfok.whatsappClone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

@@ -13,7 +13,6 @@ struct StoryboardHelper {
     static let storyboard = UIStoryboard(name: "Main", bundle: nil)
     
     enum VC {
-        
         case main
         case welcome
         case users
@@ -32,5 +31,4 @@ struct StoryboardHelper {
             }
         }
     }
-    
 }
